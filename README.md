@@ -39,7 +39,6 @@ A new application must be created, and a custom User model must be implemented w
 2. The selection and number of fields are to be determined at the developer’s discretion.
 ### 🧪 Running Tests for user_advanced app
 ```bash
-# ---------------- unittest ----------------
 python manage.py test
 ```
 Tests cover:
@@ -69,7 +68,7 @@ Stop the server:
 Before switching apps, remove the database and migration files:
 ```bash
 rm db.sqlite3
-rm users_basic/migrations/0*
+rm user_advanced/migrations/0*
 ```
 1. Open the file /custom_user_model/custom_user_model/settings.py
 - In INSTALLED_APPS, uncomment "users_basic.apps.UsersBasicConfig"
@@ -78,10 +77,14 @@ and comment out "user_advanced.apps.UserAdvancedConfig".
 and comment out the "user_advanced" version.
 - Save the file.
 2. In the user_advanced app, rename the file tests.py → disabled_tests.py. 
-3. In the users_basic app, rename disabled_tests.py → tests.py. 
+3. In the users_basic app, rename disabled_tests.py → tests.py and uncomment code in this file.
+4. Create and apply new migrations for users_basic:
+```bash
+python manage.py makemigrations users_basic
+python manage.py migrate
+```
 ### 🧪 Running Tests for users_basic App
 ```bash
-# ---------------- unittest ----------------
 python manage.py test
 ```
 Tests cover:
