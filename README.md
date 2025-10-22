@@ -31,6 +31,10 @@ venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt    
 ```
+### 5. Apply migrations for user_advanced:
+```bash
+python manage.py migrate
+```
 This installs all required packages listed in requirements.txt, ensuring your environment matches the project dependencies.
 ## 🧩 Task Description
 A new application must be created, and a custom User model must be implemented within it.
@@ -48,6 +52,10 @@ Tests cover:
 - String representation
 - Admin model registration
 - Full CRUD operations (Create, Update, Delete)
+### 🙋‍♂️ Create superuser
+```bash
+python manage.py createsuperuser
+```
 ### 🚀 Running the Application
 After tests pass, start the server:
 ```bash
@@ -98,7 +106,6 @@ Tests cover:
 ```bash
 python manage.py createsuperuser
 ```
-
 ### 🚀 Running the Application
 After tests pass, start the server:
 ```bash
