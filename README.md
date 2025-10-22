@@ -94,6 +94,11 @@ Tests cover:
 - Registration of CustomUserBasic in Django Admin
 - Presence of birth_date and title fields in the admin fieldsets
 
+### 🙋‍♂️ Create superuser
+```bash
+python manage.py createsuperuser
+```
+
 ### 🚀 Running the Application
 After tests pass, start the server:
 ```bash
