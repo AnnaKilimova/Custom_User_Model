@@ -60,6 +60,11 @@ The project will be available at:
 ```
 Available route:
 - [/admin/](http://127.0.0.1:8000/admin/) - admin panel
+
+Stop the server:
+```bash
+^C
+```
 ### **⚠ Attention:** Switching to the users_basic App.
 Before switching apps, remove the database and migration files:
 ```bash
