@@ -31,11 +31,11 @@ venv\Scripts\activate
 pip install --upgrade pip
 pip install -r requirements.txt    
 ```
+This installs all required packages listed in requirements.txt, ensuring your environment matches the project dependencies.
 ### 5. Apply migrations for user_advanced:
 ```bash
 python manage.py migrate
 ```
-This installs all required packages listed in requirements.txt, ensuring your environment matches the project dependencies.
 ## 🧩 Task Description
 A new application must be created, and a custom User model must be implemented within it.
 ### 📝 Requirements:
